@@ -1,1 +1,1 @@
-# o-sikdang-frontend
+# 오늘의 식당 (Client)
