@@ -1,15 +1,19 @@
 import styled from "styled-components";
-import { px2vw } from "../utils/style";
 
-interface Button {
+interface IButtonProps {
   fillColor: string;
+  fontColor?: string;
+  outline?: Boolean;
 }
 
-const Button = styled.button<Button>`
+const Button = styled.button<IButtonProps>`
   background-color: ${(props) => props.fillColor};
+  color: ${(props) => props.fontColor && props.fontColor};
+  font-weight: bold;
 
-  padding: ${px2vw(8)};
-  border-radius: ${px2vw(8)};
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
 `;
 
 export default Button;
