@@ -6,7 +6,7 @@ export const darkTheme: DefaultTheme = {
   yellow: "#fac072",
 };
 
-export const whiteTheme: DefaultTheme = {
+export const lightTheme: DefaultTheme = {
   basicBg: "#f7f6f2",
   basicFont: "#4c3f36",
   yellow: "#fac072",
