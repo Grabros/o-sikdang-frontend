@@ -1,12 +1,13 @@
 import { DefaultTheme } from "styled-components";
 
-const myTheme: DefaultTheme = {
-  colors: {
-    basicBg: "#f7f6f2",
-    basicFont: "#4c3f36",
-
-    yellow_1: "#fac072",
-  },
+export const darkTheme: DefaultTheme = {
+  basicBg: "#000",
+  basicFont: "#fff",
+  yellow: "#fac072",
 };
 
-export default myTheme;
+export const whiteTheme: DefaultTheme = {
+  basicBg: "#f7f6f2",
+  basicFont: "#4c3f36",
+  yellow: "#fac072",
+};
