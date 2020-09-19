@@ -2,17 +2,25 @@ import React, { useState } from "react";
 
 /* Style */
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./styles/GlobalStyle";
 import { darkTheme, lightTheme } from "./styles/DefaultTheme";
+import GlobalStyle from "./styles/GlobalStyle";
 
 /* Component */
+import Header from "./components/Header/Header";
+import Switch from "./components/Switch/Switch";
 
 function App() {
-  const [defaultTheme, setDefaultTheme] = useState(lightTheme);
+  const [isDark, setIsDark] = useState(false);
+
+  function changeTheme() {
+    setIsDark(!isDark);
+  }
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
       <GlobalStyle />
+      <Header />
+      <Switch changeTheme={changeTheme} isDark={isDark} />
     </ThemeProvider>
   );
 }
