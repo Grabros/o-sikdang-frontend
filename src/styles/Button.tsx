@@ -9,11 +9,10 @@ interface IButtonProps {
 const Button = styled.button<IButtonProps>`
   background-color: ${(props) => props.fillColor};
   color: ${(props) => props.fontColor && props.fontColor};
-  font-weight: bold;
 
-  font-size: 1rem;
-  padding: 0.4rem 1.2rem;
-  border-radius: 0.4rem;
+  font-size: 16px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
 `;
 
 export default Button;
