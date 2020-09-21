@@ -9,7 +9,7 @@ interface ISwitch {
 function Switch({ changeTheme, isDark }: ISwitch) {
   return (
     <SwitchWrapper onClick={changeTheme}>
-      <p>{isDark ? "🌝 라이트 모드로 보기" : "🌚 다크 모드로 보기"}</p>
+      {isDark ? "🌝 라이트 모드로 보기" : "🌚 다크 모드로 보기"}
     </SwitchWrapper>
   );
 }
