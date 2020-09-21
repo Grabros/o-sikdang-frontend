@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
   background-color: ${(props) => props.theme.yellow};
   height: 70px;
   font-weight: bold;
+  width: 100%;
 `;
 
 export const HeaderContainer = styled(Container)`
@@ -17,8 +18,8 @@ export const HeaderContainer = styled(Container)`
 `;
 
 export const HeaderLeft = styled.div`
+  font-size: 24px;
   font-weight: bold;
-  font-size: 1.6rem;
   color: ${(props) => props.theme.black};
 `;
 

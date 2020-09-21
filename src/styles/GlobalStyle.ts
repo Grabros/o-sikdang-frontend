@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   
 
   :root {
-      /* font-size: ${px2vw(24)};
+      font-size: ${px2vw(24)};
 
       @media (min-width: 1024px) {
         font-size: ${px2vw(16)};
@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
       @media (min-width: 768px) {
         font-size: ${px2vw(18)};
-      } */
+      }
     }
 
     button {
@@ -47,25 +47,28 @@ export const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size : 3rem;
+    font-weight : bold;
 
-    @media (min-width : 1024px) {
-      font-size : 2.5rem;
+    @media screen and (min-width : 1024px) {
+      font-size : 2.4rem;
     }
   }
 
   h2 {
-    font-size : 2.5rem;
+    font-size : 2.4rem;
+    font-weight : bold;
 
-    @media (min-width : 1024px) {
-      font-size : 2rem;
+    @media screen and (min-width : 1024px) {
+      font-size : 1.8rem;
     }
   }
   
   h3 {
-    font-size : 2rem;
+    font-size : 1.8rem;
+    font-weight : bold;
 
-    @media (min-width : 1024px) {
-      font-size : 1.5rem;
+    @media screen and (min-width : 1024px) {
+      font-size : 1.2rem;
     }
   }
 

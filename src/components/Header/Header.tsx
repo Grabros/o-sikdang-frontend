@@ -21,7 +21,7 @@ function Header() {
         </HeaderLeft>
         <HeaderRight>
           <Button fillColor={theme.green} fontColor={theme.white}>
-            Sign in
+            LOGIN
           </Button>
         </HeaderRight>
       </HeaderContainer>

@@ -7,9 +7,10 @@ export const SwitchWrapper = styled.button`
 
   background-color: ${(props) => props.theme.basicThemeBtnBg};
   color: ${(props) => props.theme.basicFont};
-  /* font-weight: bold; */
+  font-size: 16px;
+  font-weight: bold;
 
-  padding: 0.4rem 1.2rem;
-  border-radius: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 `;
