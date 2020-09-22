@@ -5,7 +5,6 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${(props) => props.theme.yellow};
   height: 70px;
   font-weight: bold;
   width: 100%;
@@ -20,7 +19,7 @@ export const HeaderContainer = styled(Container)`
 export const HeaderLeft = styled.div`
   font-size: 24px;
   font-weight: bold;
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.basicFont};
 `;
 
 export const HeaderRight = styled.div`
