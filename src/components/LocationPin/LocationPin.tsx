@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { FiMapPin } from "react-icons/fi";
 import o_sikdang_logo from "../../assets/images/o-sikdang_logo.png";
