@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory, Link } from "react-router-dom";
 
 import { FiMapPin } from "react-icons/fi";
 import o_sikdang_logo from "../../assets/images/o-sikdang_logo.png";
@@ -8,25 +9,7 @@ import {
 } from "./LocationPin.element";
 
 function LocationPin() {
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        function (position) {
-          alert(position.coords.latitude + " " + position.coords.longitude);
-        },
-        function (error) {
-          console.error(error);
-        },
-        {
-          enableHighAccuracy: false,
-          maximumAge: 0,
-          timeout: Infinity,
-        }
-      );
-    } else {
-      alert("GPS를 지원하지 않습니다");
-    }
-  }
+  const history = useHistory();
 
   return (
     <LocationPinWrapper>
@@ -35,10 +18,10 @@ function LocationPin() {
         <div className="speech-bubble">
           <h3>“가까운 주변 맛집을 추천 받아보세요.”</h3>
         </div>
-        <div className="location-pin" onClick={getLocation}>
+        <Link className="location-pin" to="/map">
           <FiMapPin />
           <p>CLICK</p>
-        </div>
+        </Link>
       </LocationPinContainer>
     </LocationPinWrapper>
   );
