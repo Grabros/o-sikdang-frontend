@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SwitchWrapper = styled.button`
+export const SwitchModeWrapper = styled.button`
   position: fixed;
   bottom: 5%;
   right: 5%;
