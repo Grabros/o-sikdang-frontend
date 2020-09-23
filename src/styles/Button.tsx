@@ -10,7 +10,6 @@ const Button = styled.button<IButtonProps>`
   background-color: ${(props) => props.fillColor};
   color: ${(props) => props.fontColor && props.fontColor};
 
-  font-size: 16px;
   padding: 0.4rem 0.8rem;
   border-radius: 0.8rem;
 `;
