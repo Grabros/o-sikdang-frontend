@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FiMapPin } from "react-icons/fi";
 import o_sikdang_logo from "../../assets/images/o-sikdang_logo.png";
@@ -9,8 +9,6 @@ import {
 } from "./LocationPin.element";
 
 function LocationPin() {
-  const history = useHistory();
-
   return (
     <LocationPinWrapper>
       <LocationPinContainer>
