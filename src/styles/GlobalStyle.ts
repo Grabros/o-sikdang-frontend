@@ -45,6 +45,13 @@ export const GlobalStyle = createGlobalStyle`
     outline : none;
   }
 
+  a:link {  text-decoration: none;}
+ a:visited {  text-decoration: none;}
+ a:hover { text-decoration: underline;}
+
+
+  
+
   h1 {
     font-size : 3rem;
     font-weight : bold;
